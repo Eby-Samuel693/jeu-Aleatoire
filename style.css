@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    background-color: darkred;
+}
+
+#div1 {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: darkred;
+}
+
+h2 {
+    text-align: center;
+    color: gold;
+}
+
+#div2 {
+    border-style: solid;
+    border-radius: 10px;
+    width: 20%;
+    background-color: darkred;
+    color: white;
+}
+
+
+
+#flex {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#game {
+    border-style: solid;
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#click {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+}
+
+#text {
+    width: 300px;
+    height: 100px;
+    font-size: 45px;
+}
+
+#z-text {
+    margin: 0;
+}
+
+#rep {
+    font-size: 30px;
+    color: gold;
+    background-color: black;
+}
+
+#para1 {
+    font-size: 30px;
+    color: gold;
+    background-color: black;
+}
+
+#div4 {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    width: 60%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: darkred;
+    color: gold;
+    font-size: 60px;
+}
+
+#reset {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 450px){
+
+    #div1 {
+        width: 100%;
+    }
+
+    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
