@@ -113,13 +113,33 @@ h2 {
 
 @media screen and (max-width: 450px){
 
-    #div1 {
-        width: 100%;
-    }
-
-    #flex {
+    body{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
     }
-
+    #div1 {
+        width: 100%;
+        display: inline-block;
+    }
+    #div2 {
+        width: 100%;
+        display: inline-block;
+    }
+    #game {
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    #div4 {
+        width: 100%;
+    }
+    #flex {
+        flex-direction: column;
+    }
+    p {
+        text-align: center;
+    }
 }

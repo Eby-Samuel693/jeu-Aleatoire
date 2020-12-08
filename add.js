@@ -7,6 +7,7 @@ let envoie = document.getElementById("click");
 let utilisateur = document.getElementById("rep-U");
 let reset = document.getElementById("reset");
 
+//fonction monClick
 function monClick() {
 
     if (chance > -1) {
@@ -20,22 +21,32 @@ function monClick() {
             rep.innerHTML = "FAUX ton nombre est trop petit.";
             rest.innerHTML = chance--;
             utilisateur.innerHTML += champ.value + " ";
-            reset.removeEventListener("click",monClick);
         }
         else if (parseInt(champ.value) > trouver) {
             rep.innerHTML = "FAUX ton nombre est trop grand.";
             rest.innerHTML = chance--;
             utilisateur.innerHTML += champ.value + " ";
-            reset.removeEventListener("click",monClick);
         }
         else {
         }
     }
     else {
-        reset.removeEventListener("click",champ.value);
+
     }
 }
 
+
+// fonction "reset"
+function supprime() {
+    champ.value = null;
+    utilisateur.innerHTML = null;
+    rest.innerHTML = null;
+}
+
+
+// le bouton "envoie" permet simplement de validé le nombre entrée ^^
 envoie.addEventListener("click",monClick);
-reset.addEventListener("click",monReset);
+
+// le bouton "recommencé" remettra les valeurs par defaut = nul
+reset.addEventListener("click",supprime);
 
